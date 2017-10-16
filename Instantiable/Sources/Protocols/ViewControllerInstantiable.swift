@@ -12,9 +12,7 @@ public protocol Instantiable where Self: UIViewController {
     associatedtype Dependency
     
     static var factory: ViewFactory { get }
-    
-    static func instantiate(dependency: Dependency) -> Self
-    
+        
     func setup(dependency: Dependency)
 }
 
