@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/mweglarz/Instantiable.git", tag: spec.version.to_s, submodules: true }
-  spec.source_files = "Sources/**/*"
+  spec.source_files = "Instantiable/**/*"
 
   spec.frameworks = "UIKit"
 end
