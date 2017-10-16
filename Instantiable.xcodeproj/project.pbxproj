@@ -10,6 +10,10 @@
 		E18A875C1F94AEC700E17900 /* Instantiable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18A87521F94AEC700E17900 /* Instantiable.framework */; };
 		E18A87611F94AEC700E17900 /* InstantiableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A87601F94AEC700E17900 /* InstantiableTests.swift */; };
 		E18A87631F94AEC700E17900 /* Instantiable.h in Headers */ = {isa = PBXBuildFile; fileRef = E18A87551F94AEC700E17900 /* Instantiable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E18A87711F94B10400E17900 /* StoryboardViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A87701F94B0F300E17900 /* StoryboardViewFactory.swift */; };
+		E18A87721F94B10600E17900 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A876E1F94B0F300E17900 /* ViewFactory.swift */; };
+		E18A87731F94B10900E17900 /* XibViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A876F1F94B0F300E17900 /* XibViewFactory.swift */; };
+		E18A87761F94B11E00E17900 /* ViewControllerInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A87751F94B11A00E17900 /* ViewControllerInstantiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		E18A875B1F94AEC700E17900 /* InstantiableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantiableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18A87601F94AEC700E17900 /* InstantiableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiableTests.swift; sourceTree = "<group>"; };
 		E18A87621F94AEC700E17900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E18A876E1F94B0F300E17900 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		E18A876F1F94B0F300E17900 /* XibViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewFactory.swift; sourceTree = "<group>"; };
+		E18A87701F94B0F300E17900 /* StoryboardViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewFactory.swift; sourceTree = "<group>"; };
+		E18A87751F94B11A00E17900 /* ViewControllerInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInstantiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +98,28 @@
 		E18A876C1F94AEDD00E17900 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E18A87741F94B11300E17900 /* Protocols */,
+				E18A876D1F94B0E700E17900 /* ViewFactory */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		E18A876D1F94B0E700E17900 /* ViewFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E18A87701F94B0F300E17900 /* StoryboardViewFactory.swift */,
+				E18A876E1F94B0F300E17900 /* ViewFactory.swift */,
+				E18A876F1F94B0F300E17900 /* XibViewFactory.swift */,
+			);
+			path = ViewFactory;
+			sourceTree = "<group>";
+		};
+		E18A87741F94B11300E17900 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E18A87751F94B11A00E17900 /* ViewControllerInstantiable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18A87761F94B11E00E17900 /* ViewControllerInstantiable.swift in Sources */,
+				E18A87711F94B10400E17900 /* StoryboardViewFactory.swift in Sources */,
+				E18A87721F94B10600E17900 /* ViewFactory.swift in Sources */,
+				E18A87731F94B10900E17900 /* XibViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +416,7 @@
 		E18A876A1F94AEC700E17900 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M245N4X5T;
 				INFOPLIST_FILE = InstantiableTests/Info.plist;
@@ -398,6 +431,7 @@
 		E18A876B1F94AEC700E17900 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M245N4X5T;
 				INFOPLIST_FILE = InstantiableTests/Info.plist;
