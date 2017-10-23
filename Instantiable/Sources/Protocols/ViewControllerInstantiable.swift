@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public protocol Instantiable where Self: UIViewController {
     associatedtype Dependency
@@ -24,6 +25,12 @@ public extension Instantiable {
         viewController.setup(dependency: dependency)
         
         return viewController
+    }
+
+    static func instantiateInNavigation(dependency: Dependency) -> UINavigationController {
+        let viewController: Self = Self.instantiate(dependency: dependency)
+        
+        return UINavigationController(rootViewController: viewController)
     }
 }
 
