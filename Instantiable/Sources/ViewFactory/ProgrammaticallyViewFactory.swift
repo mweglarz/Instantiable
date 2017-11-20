@@ -10,6 +10,8 @@ import Foundation
 
 open class ProgrammaticallyViewFactory: ViewFactory {
     
+    public init() {}
+    
     override open func create<Controller>() -> Controller where Controller: UIViewController {
         let viewController = Controller()
         return viewController
