@@ -40,7 +40,7 @@ public extension Instantiable where Dependency == Void {
         return Self.instantiate(dependency: ())
     }
     
-    static func instantiateInNavigation() -> Self {
+    static func instantiateInNavigation() -> UINavigationController {
         return Self.instantiateInNavigation(dependency: ())
     }
 }
