@@ -14,6 +14,7 @@
 		E18A87721F94B10600E17900 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A876E1F94B0F300E17900 /* ViewFactory.swift */; };
 		E18A87731F94B10900E17900 /* XibViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A876F1F94B0F300E17900 /* XibViewFactory.swift */; };
 		E18A87761F94B11E00E17900 /* ViewControllerInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A87751F94B11A00E17900 /* ViewControllerInstantiable.swift */; };
+		E1E8C09B1FC2EC44001F36A6 /* ProgrammaticallyViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8C09A1FC2EC44001F36A6 /* ProgrammaticallyViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		E18A876F1F94B0F300E17900 /* XibViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewFactory.swift; sourceTree = "<group>"; };
 		E18A87701F94B0F300E17900 /* StoryboardViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewFactory.swift; sourceTree = "<group>"; };
 		E18A87751F94B11A00E17900 /* ViewControllerInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInstantiable.swift; sourceTree = "<group>"; };
+		E1E8C09A1FC2EC44001F36A6 /* ProgrammaticallyViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E18A87701F94B0F300E17900 /* StoryboardViewFactory.swift */,
 				E18A876E1F94B0F300E17900 /* ViewFactory.swift */,
 				E18A876F1F94B0F300E17900 /* XibViewFactory.swift */,
+				E1E8C09A1FC2EC44001F36A6 /* ProgrammaticallyViewFactory.swift */,
 			);
 			path = ViewFactory;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				E18A87761F94B11E00E17900 /* ViewControllerInstantiable.swift in Sources */,
 				E18A87711F94B10400E17900 /* StoryboardViewFactory.swift in Sources */,
 				E18A87721F94B10600E17900 /* ViewFactory.swift in Sources */,
+				E1E8C09B1FC2EC44001F36A6 /* ProgrammaticallyViewFactory.swift in Sources */,
 				E18A87731F94B10900E17900 /* XibViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
