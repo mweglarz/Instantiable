@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "VCInstantiable"
-  spec.version = "0.0.8"
+  spec.version = "0.0.9"
   spec.summary = "Helper for instantiating ViewControllers and injecting dependency."
   spec.homepage = "https://github.com/mweglarz/Instantiable.git"
   spec.license = { type: 'MIT', file: 'LICENSE' }

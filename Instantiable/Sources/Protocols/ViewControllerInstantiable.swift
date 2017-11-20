@@ -39,5 +39,9 @@ public extension Instantiable where Dependency == Void {
     static func instantiate() -> Self {
         return Self.instantiate(dependency: ())
     }
+    
+    static func instantiateInNavigation() -> Self {
+        return Self.instantiateInNavigation(dependency: ())
+    }
 }
 
